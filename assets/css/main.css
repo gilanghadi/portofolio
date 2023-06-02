@@ -61,6 +61,9 @@ h2 {
   -webkit-backdrop-filter: blur(3.9px);
 }
 
+.capitalize{
+  text-transform: capitalize !important;
+}
 
 /* button animation */
 .btn-anim {
