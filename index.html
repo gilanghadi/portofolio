@@ -1,68 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta
-      charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1" />
-    <title>
-      Portofolio
-      Site
-    </title>
-    <link
-      rel="stylesheet"
-      href="./assets/css/main.css" />
-    <link
-      rel="stylesheet"
-      href="./assets/css/bootstrap.min.css" />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio Site</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin />
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Roboto&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      rel="stylesheet"
-      href="assets/package/splide-4.1.3/dist/css/splide.min.css" />
-    <link
-      rel="shortcut icon"
-      href="assets/img/Logo.png"
-      type="image/x-icon" />
+      href="assets/package/splide-4.1.3/dist/css/splide.min.css"
+    />
+    <link rel="shortcut icon" href="assets/img/Logo.png" type="image/x-icon" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <style>
       @media (min-width: 992px) {
         .nav-link:hover::after {
           content: "";
           display: block;
-          border-bottom: 3px
-            solid
-            rgba(
-              95,
-              13,
-              228,
-              0.733
-            );
+          border-bottom: 3px solid rgba(95, 13, 228, 0.733);
           width: 70%;
           padding: 3px;
           margin-bottom: -1em;
@@ -72,16 +44,9 @@
   </head>
 
   <body>
-    <nav
-      class="navbar navbar-expand-lg bg-transparent fixed-top"
-      id="navbar">
-      <div
-        class="container-fluid">
-        <a
-          class="navbar-brand fw-bold text-white ps-2"
-          href=""
-          >GilangHadi</a
-        >
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-white ps-2" href="">GilangHadi</a>
         <button
           class="navbar-toggler border-0"
           type="button"
@@ -89,152 +54,92 @@
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span
-            class="text-white"
-            ><i
-              class="bi bi-distribute-vertical"></i
+          aria-label="Toggle navigation"
+        >
+          <span class="text-white"
+            ><i class="bi bi-distribute-vertical"></i
           ></span>
         </button>
-        <div
-          class="collapse navbar-collapse"
-          id="navbarNav">
-          <ul
-            class="navbar-nav">
-            <li
-              class="nav-item">
-              <a
-                class="nav-link text-white ps-2"
-                aria-current="page"
-                href=""
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white ps-2" aria-current="page" href=""
                 >HOME</a
               >
             </li>
-            <li
-              class="nav-item">
-              <a
-                class="nav-link text-white ps-2"
-                href="#about"
-                >ABOUT</a
-              >
+            <li class="nav-item">
+              <a class="nav-link text-white ps-2" href="#about">ABOUT</a>
             </li>
-            <li
-              class="nav-item">
-              <a
-                class="nav-link text-white ps-2"
-                href="#projects"
-                >PROJECTS</a
-              >
+            <li class="nav-item">
+              <a class="nav-link text-white ps-2" href="#projects">PROJECTS</a>
             </li>
-            <li
-              class="nav-item">
-              <a
-                class="nav-link text-white ps-2"
-                href="#contact"
-                >CONTACT</a
-              >
+            <li class="nav-item">
+              <a class="nav-link text-white ps-2" href="#contact">CONTACT</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <main id="main">
-      <div
-        class="container mt-5 pt-5">
+      <div class="container mt-5 pt-5">
         <!-- hero  -->
-        <section
-          class="mt-0 mt-lg-5 pt-lg-5">
-          <div
-            class="row">
-            <div
-              class="col-md-8">
-              <div
-                class="border-start border-3 border-white">
-                <p
-                  class="ms-3 text-name text-white"
-                  style="
-                    font-size: 2.3rem;
-                  ">
+        <section class="mt-0 mt-lg-5 pt-lg-5">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="border-start border-3 border-white">
+                <p class="ms-3 text-name text-white" style="font-size: 2.3rem">
                   I'm
-                  <span
-                    class="name"></span>
+                  <span class="name"></span>
                 </p>
                 <p
                   class="ms-3 text-gray-clr job"
-                  style="
-                    font-size: 1rem;
-                    margin-top: -10px;
-                  "></p>
+                  style="font-size: 1rem; margin-top: -10px"
+                ></p>
               </div>
-              <div
-                class="ms-3 mt-4">
+              <div class="ms-3 mt-4">
                 <a
                   href="#contact"
                   class="border border-1 rounded-lg rounded-pill text-decoration-none p-1 px-5 btn-anim"
-                  style="
-                    font-size: 18px;
-                    font-weight: 300;
-                  "
+                  style="font-size: 18px; font-weight: 300"
                   >Contact</a
                 >
               </div>
             </div>
-            <div
-              class="col-md-4">
-              <div
-                class="d-flex justify-content-center">
-                <div
-                  class="banter-loader d-none d-md-block">
-                  <div
-                    class="banter-loader__box"></div>
-                  <div
-                    class="banter-loader__box"></div>
-                  <div
-                    class="banter-loader__box"></div>
-                  <div
-                    class="banter-loader__box"></div>
-                  <div
-                    class="banter-loader__box"></div>
-                  <div
-                    class="banter-loader__box"></div>
-                  <div
-                    class="banter-loader__box"></div>
-                  <div
-                    class="banter-loader__box"></div>
-                  <div
-                    class="banter-loader__box"></div>
+            <div class="col-md-4">
+              <div class="d-flex justify-content-center">
+                <div class="banter-loader d-none d-md-block">
+                  <div class="banter-loader__box"></div>
+                  <div class="banter-loader__box"></div>
+                  <div class="banter-loader__box"></div>
+                  <div class="banter-loader__box"></div>
+                  <div class="banter-loader__box"></div>
+                  <div class="banter-loader__box"></div>
+                  <div class="banter-loader__box"></div>
+                  <div class="banter-loader__box"></div>
+                  <div class="banter-loader__box"></div>
                 </div>
               </div>
             </div>
           </div>
         </section>
       </div>
-      <div
-        class="container">
+      <div class="container">
         <!-- card about -->
-        <section
-          style="
-            margin-top: 7rem;
-          ">
-          <div
-            class="container">
+        <section style="margin-top: 7rem">
+          <div class="container">
             <div
               class="row justify-content-center"
               data-aos="fade-up"
               data-aos-delay="20"
               data-aos-easing="ease-in-out"
-              data-aos-duration="1000">
+              data-aos-duration="1000"
+            >
               <div
-                class="col-lg-8 col-md-10 card-social p-2 rounded-3 rounded-lg">
-                <div
-                  class="row">
-                  <div
-                    class="col-md-8">
-                    <span
-                      class="text-gray-clr p-2 me-4"
-                      style="
-                        font-size: 17px;
-                      "
+                class="col-lg-8 col-md-10 card-social p-2 rounded-3 rounded-lg"
+              >
+                <div class="row">
+                  <div class="col-md-8">
+                    <span class="text-gray-clr p-2 me-4" style="font-size: 17px"
                       >SOCIAL</span
                     >
                     <span
@@ -246,8 +151,7 @@
                         >Instagram</a
                       ></span
                     >
-                    <span
-                      class="border-start"
+                    <span class="border-start"
                       ><a
                         href="https://github.com/gilanghadi/"
                         target="_blank"
@@ -256,8 +160,7 @@
                         >Github</a
                       ></span
                     >
-                    <span
-                      class="border-start"
+                    <span class="border-start"
                       ><a
                         href="https://www.linkedin.com/in/gilang-hadi/"
                         target="_blank"
@@ -268,61 +171,20 @@
                     >
                   </div>
                 </div>
-                <div
-                  class="row p-4 mt-2">
-                  <div
-                    class="col-md-6 border-end">
-                    <p
-                      class="text-white">
-                      @LOWQUOTES
-                    </p>
-                    <p
-                      class="text-gray-clr">
-                      “Experience
-                      is
-                      the
-                      name
-                      everyone
-                      gives
-                      to
-                      their
-                      mistakes.”
-                      &hyphen;
-                      Oscar
-                      Wilde
+                <div class="row p-4 mt-2">
+                  <div class="col-md-6 border-end">
+                    <p class="text-white">@LOWQUOTES</p>
+                    <p class="text-gray-clr">
+                      “Experience is the name everyone gives to their mistakes.”
+                      &hyphen; Oscar Wilde
                     </p>
                   </div>
-                  <div
-                    class="col-md-6">
-                    <p
-                      class="text-white">
-                      @LOWQUOTES
-                    </p>
-                    <p
-                      class="text-gray-clr">
-                      “Sometimes
-                      it
-                      pays
-                      to
-                      stay
-                      in
-                      bed
-                      on
-                      Monday,
-                      rather
-                      than
-                      spending
-                      the
-                      rest
-                      of
-                      the
-                      week
-                      debugging
-                      Monday&apos;s
-                      code.”
-                      &hyphen;
-                      Dan
-                      Salomon
+                  <div class="col-md-6">
+                    <p class="text-white">@LOWQUOTES</p>
+                    <p class="text-gray-clr">
+                      “Sometimes it pays to stay in bed on Monday, rather than
+                      spending the rest of the week debugging Monday&apos;s
+                      code.” &hyphen; Dan Salomon
                     </p>
                   </div>
                 </div>
@@ -330,481 +192,274 @@
             </div>
           </div>
         </section>
-        <div
-          class="d-flex mt-5"
-          id="about">
-          <span
-            class="text-gray-clr me-2"
-            >About</span
-          >
-          <hr
-            class="border border-1 border-white"
-            width="90%" />
+        <div class="d-flex mt-5" id="about">
+          <span class="text-gray-clr me-2">ABOUT</span>
+          <hr class="border border-1 border-white" width="90%" />
         </div>
       </div>
-      <div
-        class="container">
+      <div class="container">
         <!-- about -->
-        <section
-          class="pt-5 mt-3">
-          <div
-            class="container">
-            <div
-              class="row">
-              <div
-                class="col-md-4"
-                data-aos="fade-right"
-                data-aos-easing="ease-in-out"
-                data-aos-duration="1000">
+        <section class="pt-5 mt-3 mb-4 mb-lg-5">
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-lg-6 text-center">
+              <img
+                src="./assets/img/icon.jpg"
+                alt="jellyfish"
+                class="rounded-circle img-fluid"
+                width="200"
+              />
+            </div>
+            <div class="col-lg-6">
+              <div class="mt-4 mt-md-0">
                 <div
-                  class="border-white border-start border-2">
-                  <h2
-                    class="text-blue-clr ms-2 fw-semibold">
-                    About
-                    Me
-                  </h2>
+                  class="border-white border-start border-2"
+                  data-aos="fade-right"
+                  data-aos-delay="20"
+                  data-aos-easing="ease-in-out"
+                  data-aos-duration="1000"
+                >
+                  <h2 class="text-blue-clr ms-3 fw-semibold">About Me</h2>
                 </div>
                 <p
-                  class="text-gray-clr capitalize">
-                  a reliable informatics engineering fresh graduate with a high desire for learning enthusiasm in the field of interest. very interested as a fullstack developer and quite skilled in that field. have 1 year experience
+                  class="text-gray-clr capitalize mt-3 mt-md-0"
+                  data-aos="fade-up"
+                  data-aos-delay="20"
+                  data-aos-easing="ease-in-out"
+                  data-aos-duration="1000"
+                >
+                  a reliable informatics engineering fresh graduate with a high
+                  desire for learning enthusiasm in the field of interest. very
+                  interested as a fullstack developer and quite skilled in that
+                  field. have 1 year experience
                 </p>
-                <!-- <p
-                  class="text-gray-clr mb-0">
-                  Spending
-                  Time
-                  Behind
-                  Computer
-                  And
-                  Internet,
-                  Trying
-                  New
-                  Things
-                  Is
-                  My
-                  Passion,
-                  At
-                  Least
-                  I
-                  Am
-                  Good
-                  At
-                  Everything.
-                </p>
-                <p
-                  class="text-gray-clr mb-5 mb-md-0">
-                  Have
-                  the
-                  ability
-                  as
-                  a
-                  junior
-                  fullstack
-                  web
-                  developer
-                  for
-                  1
-                  year.
-                </p> -->
-              </div>
-              <div
-                class="col-md-4"
-                data-aos="fade-right"
-                data-aos-easing="ease-in-out"
-                data-aos-duration="1000">
-                <div
-                  class="border-start border-2 border-white">
-                  <h2
-                    class="text-white ms-2">
-                    My
-                    Skills
-                  </h2>
-                </div>
-                <ul
-                  class="text-gray-clr mb-5 mb-sm-0">
-                  <li>
-                    <span
-                      class="text-blue-clr me-1"
-                      >PHP</span
-                    >
-                    Languange
-                  </li>
-                  <li>
-                    <span
-                      class="text-blue-clr me-1"
-                      >LARAVEL</span
-                    >
-                    Framework
-                  </li>
-                  <li>
-                    <span
-                      class="text-blue-clr me-1"
-                      >GIT</span
-                    >
-                  </li>
-                  <li>
-                    <span
-                      class="text-blue-clr me-1"
-                      >MYSQL</span
-                    >
-                    Database
-                  </li>
-                  <li>
-                    <span
-                      class="text-blue-clr me-1"
-                      >POSTGRESQL</span
-                    >
-                    Database
-                  </li>
-                </ul>
-              </div>
-              <div
-                class="col-md-4 mt-3 mt-sm-0"
-                data-aos="zoom-in"
-                data-aos-delay="20"
-                data-aos-easing="ease-in-out"
-                data-aos-duration="1000">
-                <img
-                  src="./assets/img/file.svg"
-                  alt="image"
-                  class="mt-3" />
               </div>
             </div>
           </div>
         </section>
-        <div
-          class="d-flex mt-md-4">
-          <hr
-            class="border border-1 border-white"
-            width="90%" />
-          <span
-            class="text-gray-clr ms-2"
-            >Projects</span
-          >
+        <section class="pt-lg-5">
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-6 col-lg-2 text-center mb-3 mb-lg-0">
+              <img src="./assets/img/skills/html.png" alt="" width="100" />
+            </div>
+            <div class="col-6 col-lg-2 text-center mb-3 mb-lg-0">
+              <img src="./assets/img/skills/css.png" alt="" width="80" />
+            </div>
+            <div class="col-6 col-lg-2 text-center mb-3 mb-lg-0">
+              <img
+                src="./assets/img/skills/javascript.png"
+                alt=""
+                width="130"
+              />
+            </div>
+            <div class="col-6 col-lg-2 text-center mb-3 mb-lg-0">
+              <img src="./assets/img/skills/php.png" alt="" width="100" />
+            </div>
+            <div class="col-6 col-lg-2 text-center mb-3 mb-lg-0">
+              <img src="./assets/img/skills/laravel.png" alt="" width="80" />
+            </div>
+            <div class="col-6 col-lg-2 text-center mb-3 mb-lg-0">
+              <img src="./assets/img/skills/mysql.png" alt="" width="100" />
+            </div>
+          </div>
+        </section>
+        <div class="d-flex mt-md-4">
+          <hr class="border border-1 border-white" width="90%" />
+          <span class="text-gray-clr ms-2">PROJECTS</span>
         </div>
       </div>
-      <div
-        class="container-fluid">
-        <section
-          class="splide mx-md-5">
-          <div
-            class="splide__track py-5 mx-3 mx-md-5">
-            <ul
-              class="splide__list col-lg-10">
-              <li
-                class="splide__slide py-4">
+      <div class="container-fluid">
+        <section class="splide mx-md-5">
+          <div class="splide__track py-5 mx-3 mx-md-5">
+            <ul class="splide__list col-lg-10">
+              <li class="splide__slide py-4">
                 <a
                   href="https://tasis.therrors.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="text-decoration-none">
+                  class="text-decoration-none"
+                >
                   <div
                     class=""
                     data-aos="zoom-in"
                     data-aos-delay="20"
                     data-aos-easing="ease-in-out"
-                    data-aos-duration="1000">
-                    <div
-                      class="card-project text-capitalize">
-                      <div
-                        class="mb-2">
+                    data-aos-duration="1000"
+                  >
+                    <div class="card-project text-capitalize">
+                      <div class="mb-2">
                         <img
                           src="./assets/img/tasis.png"
                           class="card-img-top rounded-top-3"
-                          alt="" />
+                          alt=""
+                        />
                       </div>
-                      <div
-                        class="p-3">
-                        <h5
-                          class="card-title mb-2 fw-semibold">
-                          Tasis
-                        </h5>
-                        <p
-                          class="text-gray-clr">
-                          Manage
-                          attendance
-                          and
-                          calculate
-                          violations
-                          committed
-                          by
-                          students/students
-                          in
-                          a
-                          school.
+                      <div class="p-3">
+                        <h5 class="card-title mb-2 fw-semibold">Tasis</h5>
+                        <p class="text-gray-clr">
+                          Manage attendance and calculate violations committed
+                          by students/students in a school.
                         </p>
-                        <p
-                          class="text-gray-clr"
-                          style="
-                            font-size: 14px;
-                          ">
-                          Oct
-                          23
-                          2022
-                          ,
-                          Laravel,
-                          Bootstrap
+                        <p class="text-gray-clr" style="font-size: 14px">
+                          Oct 23 2022 , Laravel, Bootstrap
                         </p>
-                        <div
-                          class="card-arrow">
-                          <i
-                            class="bi bi-arrow-right-short"></i>
+                        <div class="card-arrow">
+                          <i class="bi bi-arrow-right-short"></i>
                         </div>
                       </div>
                     </div>
                   </div>
                 </a>
               </li>
-              <li
-                class="splide__slide py-4">
+              <li class="splide__slide py-4">
                 <a
                   href="https://critaku.therrors.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="text-decoration-none">
+                  class="text-decoration-none"
+                >
                   <div
                     class=""
                     data-aos="zoom-in"
                     data-aos-delay="20"
                     data-aos-easing="ease-in-out"
-                    data-aos-duration="1000">
-                    <div
-                      class="card-project text-capitalize">
-                      <div
-                        class="mb-2">
+                    data-aos-duration="1000"
+                  >
+                    <div class="card-project text-capitalize">
+                      <div class="mb-2">
                         <img
                           src="./assets/img/critaku.png"
                           class="card-img-top rounded-top-3"
-                          alt="" />
+                          alt=""
+                        />
                       </div>
-                      <div
-                        class="p-3">
-                        <h5
-                          class="card-title mb-2 fw-semibold">
-                          Critaku
-                        </h5>
-                        <p
-                          class="text-gray-clr">
-                          Critaku
-                          is
-                          a
-                          Website
-                          for
-                          Budding
-                          Writers
-                          who
-                          have
-                          an
-                          Interest
-                          in
-                          Writing
-                          blogs
-                          or
-                          Simple
-                          biographies
+                      <div class="p-3">
+                        <h5 class="card-title mb-2 fw-semibold">Critaku</h5>
+                        <p class="text-gray-clr">
+                          Critaku is a Website for Budding Writers who have an
+                          Interest in Writing blogs or Simple biographies
                         </p>
-                        <p
-                          class="text-gray-clr"
-                          style="
-                            font-size: 14px;
-                          ">
-                          Mei
-                          09
-                          2023
-                          ,
-                          Laravel,
-                          Tailwindcss
+                        <p class="text-gray-clr" style="font-size: 14px">
+                          Mei 09 2023 , Laravel, Tailwindcss
                         </p>
-                        <div
-                          class="card-arrow">
-                          <i
-                            class="bi bi-arrow-right-short"></i>
+                        <div class="card-arrow">
+                          <i class="bi bi-arrow-right-short"></i>
                         </div>
                       </div>
                     </div>
                   </div>
                 </a>
               </li>
-              <li
-                class="splide__slide py-4">
+              <li class="splide__slide py-4">
                 <a
                   href="https://lahshop.therrors.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="text-decoration-none">
+                  class="text-decoration-none"
+                >
                   <div
                     class=""
                     data-aos="zoom-in"
                     data-aos-delay="20"
                     data-aos-easing="ease-in-out"
-                    data-aos-duration="1000">
-                    <div
-                      class="card-project text-capitalize">
-                      <div
-                        class="mb-2">
+                    data-aos-duration="1000"
+                  >
+                    <div class="card-project text-capitalize">
+                      <div class="mb-2">
                         <img
                           src="./assets/img/lahshop.png"
                           class="card-img-top rounded-top-3"
-                          alt="" />
+                          alt=""
+                        />
                       </div>
-                      <div
-                        class="p-3">
-                        <h5
-                          class="card-title mb-2 fw-semibold">
-                          Lahshop
-                        </h5>
-                        <p
-                          class="text-gray-clr">
-                          an
-                          E-commerce
-                          website
-                          with
-                          fairly
-                          simple
-                          features
-                          with
-                          an
-                          attractive
-                          design
+                      <div class="p-3">
+                        <h5 class="card-title mb-2 fw-semibold">Lahshop</h5>
+                        <p class="text-gray-clr">
+                          an E-commerce website with fairly simple features with
+                          an attractive design
                         </p>
-                        <p
-                          class="text-gray-clr"
-                          style="
-                            font-size: 14px;
-                          ">
-                          Mei
-                          21
-                          2023
-                          ,
-                          Laravel,
-                          Bootstrap
+                        <p class="text-gray-clr" style="font-size: 14px">
+                          Mei 21 2023 , Laravel, Bootstrap
                         </p>
-                        <div
-                          class="card-arrow">
-                          <i
-                            class="bi bi-arrow-right-short"></i>
+                        <div class="card-arrow">
+                          <i class="bi bi-arrow-right-short"></i>
                         </div>
                       </div>
                     </div>
                   </div>
                 </a>
               </li>
-              <li
-                class="splide__slide py-4">
+              <li class="splide__slide py-4">
                 <a
                   href="https://gamvote.therrors.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="text-decoration-none">
+                  class="text-decoration-none"
+                >
                   <div
                     class=""
                     data-aos="zoom-in"
                     data-aos-delay="20"
                     data-aos-easing="ease-in-out"
-                    data-aos-duration="1000">
-                    <div
-                      class="card-project text-capitalize">
-                      <div
-                        class="mb-2">
+                    data-aos-duration="1000"
+                  >
+                    <div class="card-project text-capitalize">
+                      <div class="mb-2">
                         <img
                           src="./assets/img/gamvote.png"
                           class="card-img-top rounded-top-3"
-                          alt="" />
+                          alt=""
+                        />
                       </div>
-                      <div
-                        class="p-3">
-                        <h5
-                          class="card-title mb-2 fw-semibold">
-                          Gamvote
-                        </h5>
-                        <p
-                          class="text-gray-clr">
-                          E-voting
-                          website
-                          that
-                          is
-                          used
-                          for
-                          general
-                          elections
-                          both
-                          within
-                          the
-                          school
-                          and
-                          outside
-                          of
-                          school
+                      <div class="p-3">
+                        <h5 class="card-title mb-2 fw-semibold">Gamvote</h5>
+                        <p class="text-gray-clr">
+                          E-voting website that is used for general elections
+                          both within the school and outside of school
                         </p>
-                        <p
-                          class="text-gray-clr"
-                          style="
-                            font-size: 14px;
-                          ">
-                          September
-                          11
-                          2022
-                          ,
-                          Laravel,
-                          Bootstrap
+                        <p class="text-gray-clr" style="font-size: 14px">
+                          September 11 2022 , Laravel, Bootstrap
                         </p>
-                        <div
-                          class="card-arrow">
-                          <i
-                            class="bi bi-arrow-right-short"></i>
+                        <div class="card-arrow">
+                          <i class="bi bi-arrow-right-short"></i>
                         </div>
                       </div>
                     </div>
                   </div>
                 </a>
               </li>
-              <li
-                class="splide__slide py-4">
+              <li class="splide__slide py-4">
                 <a
                   href="https://ongkircheck.therrors.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="text-decoration-none">
+                  class="text-decoration-none"
+                >
                   <div
                     class=""
                     data-aos="zoom-in"
                     data-aos-delay="20"
                     data-aos-easing="ease-in-out"
-                    data-aos-duration="1000">
-                    <div
-                      class="card-project text-capitalize">
-                      <div
-                        class="mb-2">
+                    data-aos-duration="1000"
+                  >
+                    <div class="card-project text-capitalize">
+                      <div class="mb-2">
                         <img
                           src="./assets/img/ongkircheck.png"
                           class="card-img-top rounded-top-3"
-                          alt="" />
+                          alt=""
+                        />
                       </div>
-                      <div
-                        class="p-3">
-                        <h5
-                          class="card-title mb-2 fw-semibold">
-                          OngkirCheck
-                        </h5>
-                        <p
-                          class="text-gray-clr">
-                          Application To Check Shipping Costs According To The Choice Of Shipping Services Based On Mileage
+                      <div class="p-3">
+                        <h5 class="card-title mb-2 fw-semibold">OngkirCheck</h5>
+                        <p class="text-gray-clr">
+                          Application To Check Shipping Costs According To The
+                          Choice Of Shipping Services Based On Mileage
                         </p>
-                        <p
-                          class="text-gray-clr"
-                          style="
-                            font-size: 14px;
-                          ">
-                          September
-                          16
-                          2022
-                          ,
-                          Laravel,
-                          Bootstrap
+                        <p class="text-gray-clr" style="font-size: 14px">
+                          September 16 2022 , Laravel, Bootstrap
                         </p>
-                        <div
-                          class="card-arrow">
-                          <i
-                            class="bi bi-arrow-right-short"></i>
+                        <div class="card-arrow">
+                          <i class="bi bi-arrow-right-short"></i>
                         </div>
                       </div>
                     </div>
@@ -814,64 +469,43 @@
             </ul>
             <div
               class="splide__arrows pt-5 me-5 pe-4"
-              style="
-                position: absolute;
-                bottom: 0;
-                right: 0;
-              ">
+              style="position: absolute; bottom: 0; right: 0"
+            >
               <button
                 class="splide__arrow splide__arrow--prev bg-transparent border-0"
-                style="
-                  outline: none;
-                ">
+                style="outline: none"
+              >
                 <i
                   class="bi bi-arrow-right-short text-white"
-                  style="
-                    font-size: 1.3rem;
-                  "></i>
+                  style="font-size: 1.3rem"
+                ></i>
               </button>
               <button
                 class="splide__arrow splide__arrow--next bg-transparent border-0"
-                style="
-                  outline: none;
-                ">
+                style="outline: none"
+              >
                 <i
                   class="bi bi-arrow-left-short text-white"
-                  style="
-                    font-size: 1.3rem;
-                  "></i>
+                  style="font-size: 1.3rem"
+                ></i>
               </button>
             </div>
           </div>
         </section>
       </div>
       <!-- footer -->
-      <section
-        style="
-          margin-top: 8rem;
-        "
-        id="contact">
-        <div
-          class="container">
-          <div
-            class="row mb-5 pb-5">
-            <div
-              class="col-lg-6">
-              <p
-                class="text-gray-clr fs-2">
-                Want
-                To
-                Make
-                Awesome
-                And
-                Impactful
-                Product?
+      <section style="margin-top: 8rem" id="contact">
+        <div class="container">
+          <div class="row mb-5 pb-5">
+            <div class="col-lg-6">
+              <p class="text-gray-clr fs-2">
+                Want To Make Awesome And Impactful Product?
               </p>
-              <div
-                class="contact ms-1 mt-4">
+              <div class="contact ms-1 mt-4">
                 <a
-                  href="mailto:langdev21@gmail.com"
-                  class="text-blue-clr">
+                  href="mailto:gilangsaputro987@gmail.com"
+                  class="text-blue-clr"
+                >
                   Contact
                 </a>
                 <svg
@@ -880,60 +514,48 @@
                   height="16"
                   fill="white"
                   class="bi bi-arrow-right"
-                  viewBox="0 0 16 16">
+                  viewBox="0 0 16 16"
+                >
                   <path
                     fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
                 </svg>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section
-        class="pb-4">
-        <div
-          class="container">
-          <div
-            class="row justify-content-between">
-            <div
-              class="col-6 d-flex">
-              <span
-                class="text-gray-clr d-block"
-                ><i
-                  class="bi bi-c-circle"
-                  style="
-                    font-size: 0.8rem;
-                  "></i>
-                GilangHadi
-                2023</span
+      <section class="pb-4">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-6 d-flex">
+              <span class="text-gray-clr d-block"
+                ><i class="bi bi-c-circle" style="font-size: 0.8rem"></i>
+                GilangHadi 2023</span
               >
             </div>
-            <div
-              class="col-6 d-flex justify-content-end">
+            <div class="col-6 d-flex justify-content-end">
               <a
                 href="https://www.instagram.com/gilanghhadi/"
                 target="_blank"
                 rel="noreferrer noopener"
                 class="text-decoration-none text-gray-clr mx-2"
-                ><i
-                  class="bi bi-instagram"></i
+                ><i class="bi bi-instagram"></i
               ></a>
               <a
                 href="https://github.com/gilanghadi/"
                 target="_blank"
                 rel="noreferrer noopener"
                 class="text-decoration-none text-gray-clr mx-2"
-                ><i
-                  class="bi bi-github"></i
+                ><i class="bi bi-github"></i
               ></a>
               <a
                 href="https://www.linkedin.com/in/gilang-hadi/"
                 target="_blank"
                 rel="noreferrer noopener"
                 class="text-decoration-none text-gray-clr mx-2"
-                ><i
-                  class="bi bi-linkedin"></i
+                ><i class="bi bi-linkedin"></i
               ></a>
             </div>
           </div>
@@ -950,96 +572,65 @@
       AOS.init();
     </script>
     <script src="assets/package/splide-4.1.3/dist/js/splide.min.js"></script>
-    <script
-      type="text/javascript">
-      var splide =
-        new Splide(
-          ".splide",
-          {
-            type: "loop",
-            speed:
-              (number = 600),
-            omitEnd: true,
-            breakpoints:
-              {
-                100: {
-                  perPage: 1,
-                  autoplay: true,
-                  perMove: 1,
-                },
-                576: {
-                  perPage: 1,
-                  autoplay: true,
-                  gap: "1rem",
-                  perMove: 1,
-                },
-                768: {
-                  perPage: 1,
-                  gap: "1rem",
-                  perMove: 1,
-                },
-                992: {
-                  perPage: 2,
-                  gap: "1rem",
-                  perMove: 1,
-                },
-                1200: {
-                  perPage: 3,
-                  gap: "1rem",
-                  perMove: 1,
-                },
-                1400: {
-                  perPage: 3,
-                  gap: "1.9rem",
-                  perMove: 1,
-                },
-              },
-          }
-        );
+    <script type="text/javascript">
+      var splide = new Splide(".splide", {
+        type: "loop",
+        speed: (number = 800),
+        autoplay: true,
+        omitEnd: true,
+        breakpoints: {
+          100: {
+            perPage: 1,
+            autoplay: true,
+            perMove: 1,
+          },
+          576: {
+            perPage: 1,
+            autoplay: true,
+            gap: "1rem",
+            perMove: 1,
+          },
+          768: {
+            perPage: 1,
+            gap: "1rem",
+            perMove: 1,
+          },
+          992: {
+            perPage: 2,
+            gap: "1rem",
+            perMove: 1,
+          },
+          1200: {
+            perPage: 3,
+            gap: "1rem",
+            perMove: 1,
+          },
+          1400: {
+            perPage: 3,
+            gap: "1.9rem",
+            perMove: 1,
+          },
+        },
+      });
 
       splide.mount();
     </script>
-    <script
-      type="text/javascript">
-      const navbar =
-        document.querySelector(
-          "#navbar"
-        );
-      let navtop =
-        navbar.getBoundingClientRect()
-          .top;
+    <script type="text/javascript">
+      const navbar = document.querySelector("#navbar");
+      let navtop = navbar.getBoundingClientRect().top;
 
-      window.addEventListener(
-        "scroll",
-        function () {
-          let scroll =
-            window.scrollY;
-          if (
-            scroll >
-            navtop
-          ) {
-            navbar.classList.remove(
-              "bg-transparent"
-            );
-            navbar.classList.add(
-              "bg-white"
-            );
-            navbar.classList.add(
-              "shadow-sm"
-            );
-          } else {
-            navbar.classList.remove(
-              "bg-white"
-            );
-            navbar.classList.remove(
-              "shadow-sm"
-            );
-            navbar.classList.add(
-              "bg-transparent"
-            );
-          }
+      window.addEventListener("scroll", function () {
+        let scroll = window.scrollY;
+        if (scroll > navtop) {
+          navbar.classList.remove("bg-transparent");
+          navbar.classList.add("bg-white");
+          navbar.classList.add("shadow-sm");
+        } else {
+          navbar.classList.remove("bg-white");
+          navbar.classList.remove("shadow-sm");
+          navbar.classList.add("bg-transparent");
         }
-      );
+      });
     </script>
   </body>
 </html>
